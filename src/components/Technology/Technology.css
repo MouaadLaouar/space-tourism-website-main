@@ -57,6 +57,11 @@
     background-color: #FFFFFF;
 }
 
+.Technology ul li[data-active='true'] {
+    color: black;
+    background-color: #FFFFFF;
+}
+
 .Technology .Content {
     margin: 0;
 }
@@ -88,4 +93,8 @@
         padding: 0px 20vw;
     }
 
+}
+
+@media only screen and (min-width: 950px) {
+    
 }

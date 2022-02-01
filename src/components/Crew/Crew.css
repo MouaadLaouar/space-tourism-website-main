@@ -26,6 +26,7 @@
 .Crew .imgCommander hr {
     margin: 0;
     display: block;
+    width: 80%;
 }
 
 .Crew .imgCommander img {

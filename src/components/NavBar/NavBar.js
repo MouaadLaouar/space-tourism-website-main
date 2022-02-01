@@ -7,8 +7,6 @@ import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {home, crew, technology, destination} from '../../Redux-store/Actions/action';
 
-
-
 export default function NavBar() {
 
     const [icon, seticon] = useState(iconHamburger);
@@ -52,13 +50,9 @@ export default function NavBar() {
         }
     })
     
-    
-
-    
-
   return (
       <div className='NavBar'>
-          <img className='logo' src={ logo } alt="#" />
+          <img onClick={() => dispatch(home())} className='logo' src={ logo } alt="#" />
           <hr />
           <img className='icon' src={ icon } alt="#" onClick={() => SwitchIcon()} />
           <div className={ menu } >

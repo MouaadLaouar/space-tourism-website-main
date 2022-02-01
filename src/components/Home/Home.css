@@ -1,0 +1,96 @@
+.Home {
+    height: 100%;
+}
+
+.groupA {
+    margin: 80px 24px 0px;
+    color: #FFFFFF;
+}
+
+.groupA h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+/* group B */
+
+.groupB {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.groupB .button h1 {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    padding: 5px;
+}
+
+.groupB .button {
+    position: fixed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0 0% 100% / 0.2);
+}
+
+.groupB .button:hover {
+    height: 250px;
+    width: 250px;
+}
+
+@media only screen and (min-width: 600px) {
+    .groupA {
+        margin: 80px 159px 0px;
+    }
+
+    .groupB {
+        margin-top: 300px;
+    }
+
+    .groupB .button h1 {
+        height: 250px;
+        width: 250px;
+    }
+
+    .groupB .button:hover {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media only screen and (min-width:950px) {
+    .Home {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .groupA {
+        margin: 0;
+        margin-left: 50px;
+        width: 50vw;
+        text-align: left;
+    }
+
+    .groupB {
+        margin: 0;
+        margin-left: 100px;
+        height: 350px;
+        width: 350px;
+    }
+
+    .groupB .button {
+        position: static;
+    }
+}

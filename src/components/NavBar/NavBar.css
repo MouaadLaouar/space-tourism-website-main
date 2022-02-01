@@ -1,0 +1,173 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 30px 0px;
+}
+
+hr {
+    display: none;
+}
+
+.icon {
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menuActive,.menu {
+    background-color: hsl(0 0% 100% / 0.3);
+    backdrop-filter: blur(1rem);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    width: 70%;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuActive ul, .menu ul {
+    margin: 8rem 0rem 0rem 0rem;
+    list-style: none;
+    text-align: left;
+}
+
+.menuActive ul li, .menu ul li {
+    height: 31px;
+    margin: 40px 0px;
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuActive ul li a, .menu ul li a {
+    margin: 0;
+    font-size: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+.menuActive ul li nav {
+    width: 4px;
+    height: 0px;
+    background-color: #FFFFFF;
+    transition: height 0.4s ease-in;
+}
+
+.menuActive ul li:hover nav,
+.menuActive ul li[data-active='true'] nav {
+    height: 31px;
+}
+
+.menuActive ul li a span, .menu ul li a span {
+    margin: 0px 10px 0px 0px;
+    
+}
+
+.menuActive {
+    transform: translateX(0%);
+}
+
+.menu {
+    transform: translateX(100%);
+}
+
+@media only screen and (min-width: 600px) {
+
+    .NavBar {
+        margin: 0px 0px 0px 23px;
+        padding: 0;
+    }
+
+    .logo {
+        margin-top: 23px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+
+    .menu {
+        position: relative;
+        height: 71px;
+        padding-top: 23px;
+        margin: 0;
+        display: flex;
+        display: block;
+        transform: translateX(0%);
+        
+    }
+
+    .menu ul {
+        margin: 0px 30px;
+        padding: 0;
+        height: 100%;
+        display: flex;
+    }
+
+    .menu ul li {
+        margin: 0px;
+        padding: 0px 10px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    .menu ul li span {
+        display: none;
+    }
+
+    .menu ul li a {
+        position: fixed;
+        font-size: 14px;
+    }
+
+    .menu ul li nav {
+        height: 3px;
+        width: 0%;
+        background-color: #FFFFFF;
+        position: relative;
+        top: 50%;
+        transition: width 0.4s ease-in;
+    }
+
+    .menu ul li:hover nav,
+    .menu ul li[data-active='true'] nav {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+
+    .logo {
+        margin-left: 10vw;
+    }
+
+    hr {
+        display: block;
+        width: 100%;
+        margin-top: 21px;
+        margin-left: 20px;
+    }
+
+    .menu {
+        width: 2000px;
+        padding-right: 30px;
+    }
+
+    .menu ul li span {
+        display: block;
+    }
+
+    .menu ul li a {
+        display: flex;
+    }
+}

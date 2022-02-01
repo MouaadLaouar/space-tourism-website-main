@@ -1,0 +1,158 @@
+.Crew {
+    height: 100%;
+}
+
+.Crew h1 {
+    margin: 21px 0px 31px;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Crew h1 span {
+    color: #9a9a9a;
+    margin-right: 5px;
+}
+
+.Crew .imgCommander {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Crew .imgCommander hr {
+    margin: 0;
+    display: block;
+}
+
+.Crew .imgCommander img {
+    height: 222px;
+    width: 177px;
+}
+
+.Crew .Content {
+    margin-top: 37px;
+}
+
+.Crew .Content ul {
+    height: 15px;
+    margin: 0;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Crew .Content ul li {
+    height: 10px;
+    width: 10px;
+    background-color: #9a9a9a;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.Crew .Content ul li:hover {
+    background-color: #FFFFFF;
+}
+
+
+
+.Commander .Name {
+    margin-bottom: 16px;
+}
+
+.Commander .Name p{
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.Commander .Name h1 {
+    font-size: 24px;
+}
+
+.Commander .bio {
+    color: #FFFFFF;
+}
+
+.Crew .Content ul li[data-active= 'true'] {
+    background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 600px) {
+    .Crew h1 {
+        margin-top: 40px;
+        margin-bottom: 60px;
+        padding: 0px 0px 0px 39px;
+        justify-content: flex-start;
+    }
+
+    .Crew .imgCommander {
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .Crew .imgCommander img {
+        height: 572px;
+        width: 456px;
+    }
+
+    .Crew .Content {
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Crew .Content ul {
+        margin-bottom: 0px;
+        margin-top: 32px;
+    }
+
+    .Commander .Name h1 {
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 16px;
+    }
+
+    .Commander .bio {
+        width: 458px;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+
+    .Crew h1 {
+        padding: 0px 0px 0px 10vw;
+        font-size: 32px;
+    }
+
+    .Crew .Content {
+        width: auto;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px 0px 0px 10vw;
+    }
+
+    .Crew .Content ul {
+        margin-top: 50px;
+    } 
+
+    .Commander .Name h1 {
+        justify-content: flex-start;
+    }
+
+    .Commander .Name p {
+        font-size: 32px;
+    }
+
+    .Crew .imgCommander {
+        left: 80%;
+    }
+}

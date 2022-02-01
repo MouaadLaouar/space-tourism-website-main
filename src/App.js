@@ -29,15 +29,11 @@ export default function App() {
   useEffect(() => {
     SwitchComponants()
   })
-
-
-  console.log(components)
   
   return (
     <div className="App" data-background={ components }>
         <NavBar/>
         { SwitchComponants() }
-        
       </div>
   );
 }

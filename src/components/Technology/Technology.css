@@ -1,0 +1,91 @@
+.Technology .Hero h1 {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.Technology .Hero h1 span {
+    margin-right: 10px;
+}
+
+.Technology .Hero .img {
+    height: 170px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 34px;
+}
+
+.Technology .Hero .img[data-image="Launch vehicle"] {
+    background-image: url('./technology/image-launch-vehicle-landscape.jpg');
+}
+.Technology .Hero .img[data-image="Spaceport"] {
+    background-image: url('./technology/image-spaceport-landscape.jpg');
+}
+.Technology .Hero .img[data-image="Space capsule"] {
+    background-image: url('./technology/image-space-capsule-landscape.jpg');
+}
+
+.Technology ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 26px;
+}
+
+.Technology ul li {
+    cursor: pointer;
+    list-style: none;
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    border: solid 1px #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    transition: all 0.2s ease-in;
+}
+
+.Technology ul li:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.Technology .Content {
+    margin: 0;
+}
+
+.Technology .Content .Name h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.Technology .Content .Name p {
+    color: #9a9a9a;
+}
+
+.Technology .Content p {
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 600px) {
+    .Technology .Hero .img {
+        height: 310px;
+        margin-bottom: 56px;
+    }
+
+    .Technology ul {
+        margin-bottom: 56px;
+    }
+
+    .Technology .Content {
+        padding: 0px 20vw;
+    }
+
+}
